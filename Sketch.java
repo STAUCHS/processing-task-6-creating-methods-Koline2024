@@ -1,3 +1,5 @@
+
+
 import processing.core.PApplet;
 import java.util.Random;
 
@@ -22,7 +24,7 @@ public class Sketch extends PApplet {
     // For loop creates multiple flowers with drawFlower function
     for(int intFlowerX = 50; intFlowerX < width; intFlowerX = intFlowerX + 100){
       for(int intFlowerY = 50; intFlowerY < height; intFlowerY = intFlowerY + 100){
-        drawFlower(intFlowerX, intFlowerY);
+        drawFlower(intFlowerX, intFlowerY, 55, 200, 0);
         
       }
     } 
@@ -45,15 +47,12 @@ public class Sketch extends PApplet {
    * @Koline2024
    */
 
-   private void drawFlower(int intCircle1, int intCircle2){
+   private void drawFlower(int intCircle1, int intCircle2, int intRed, int intGreen, int intBlue){
 
-    fill(255,0,0);
+    fill(intRed, intGreen, intBlue);
     ellipse(intCircle1 + 20, intCircle2 + 20, width/15, height/15);
-    fill(255,0,0);
     ellipse(intCircle1 + 20, intCircle2 - 20, width/15, height/15);
-    fill(255,0,0);
     ellipse(intCircle1 - 20, intCircle2 + 20, width/15, height/15);
-    fill(255,0,0);
     ellipse(intCircle1 - 20, intCircle2 - 20, width/15, height/15);
     fill(255,255,0);
     ellipse(intCircle1, intCircle2, width/10, height/10); 
