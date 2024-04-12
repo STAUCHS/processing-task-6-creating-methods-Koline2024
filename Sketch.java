@@ -24,7 +24,7 @@ public class Sketch extends PApplet {
     // For loop creates multiple flowers with drawFlower function
     for(int intFlowerX = 50; intFlowerX < width; intFlowerX = intFlowerX + 100){
       for(int intFlowerY = 50; intFlowerY < height; intFlowerY = intFlowerY + 100){
-        drawFlower(intFlowerX, intFlowerY, 55, 200, 0);
+        drawFlower(intFlowerX, intFlowerY, 100, 0, 90);
         
       }
     } 
